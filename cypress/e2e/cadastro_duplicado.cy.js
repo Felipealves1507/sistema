@@ -5,7 +5,6 @@ describe('Cadastro duplicado', () => {
     cy.get('#senha').type('admin@123');
     cy.get('#btn-entrar').click();
 
-    // Aguarda redirecionamento
     cy.url().should('include', '/produtos.html');
 
     // Primeiro cadastro
